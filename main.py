@@ -157,3 +157,298 @@
 # n = int(input("Enter your num: "))
 # y = int(input("Enter your num: "))
 # print(n*y)
+# a = input(" Please enter your name: ").strip().title()
+# first, last = a.split(" ")
+# print(f"Your name is {first} {last}")
+# name = input("Enter your name:")
+# print("your name is: ", end='\n')
+# print(name)
+# x = float(input("Enter your num x: "))
+# y = float(input("Enter your num y: "))
+# z = x/y
+# print(f"Your mathematical result {z:.6f}")
+
+# def main():
+#     x = int(input("what is x?:"))
+#     print("x squared is", square(x))
+#
+#
+# def square(n):
+#     return n*n
+#
+#
+# main()
+# import sys
+# from compare import goodbye
+# if len(sys.argv) == 2:
+#     goodbye(sys.argv[1])
+# from compare import square
+# def main():
+#     test_square()
+#
+# def test_square():
+#     try:
+#        assert square(2) == 4
+#     except AssertionError:
+#         print("2 squared was not 4")
+#     try:
+#         assert square(3)== 9
+#     except AssertionError:
+#         print("3 is not 9")
+#     try:
+#         assert square(-2) == 4
+#     except AssertionError:
+#         print("2 squared was not 4")
+#     try:
+#         assert square(-3) == 9
+#     except AssertionError:
+#         print("3 is not 9")
+# if __name__ == "__main__":
+#     main()
+# from compare import square
+# import pytest
+#
+#
+# def test_positive():
+#     assert square(2) == 4
+#     assert square(3) == 9
+#
+#
+# def test_negative():
+#     assert square(-2) == 4
+#     assert square(-3) == 9
+#
+#
+# def test_zero():
+#     assert square(0) == 0
+#
+# def test_str():
+#     with pytest.raises(TypeError):
+#         square("cat")
+# from compare import hello
+#
+# def test_default():
+#     assert hello() == "hello, world"
+#
+# def test_argument():
+# #     assert hello("David") == "hello, David"
+# from compare import hello
+# def test_default():
+#     assert hello() == "hello, world"
+# def test_argument():
+#     assert hello("Riad") == "hello, Riad"
+# name = []
+# for names in range(3):
+#     name.append(input("Whats your name"))
+# for sort in sorted(name):
+#     print(f"hello, {sort}")
+# import cowsay
+# import sys
+# if len(sys.argv) == 2:
+#     cowsay.trex("Hello" + sys.argv[1])
+# name = input("Enter your name: ")
+# with open("names.txt", "a" ) as file:
+#     file.write(f"{name}\n")
+# with open("names.txt", "r") as file:
+#     for line in file:
+#         print("hello", line.rstrip()
+# names = []
+# with open("main/names.txt") as file:
+#     for line in file:
+#         names.append(line.rstrip())
+# for name in sorted(names, reverse=True):
+#     print(f"Hello, {name}")
+# names = []
+# with open("main/names.txt") as file:
+#     for line in file:
+#         name, house = line.rstrip().split(",")
+#         boys = {"name" = name, "house" = house }
+#         names.append(boys)
+# for name in sorted(names):
+#     print(f"{[]}")
+# x = int(input("Enter your number:"))
+# y = int(input("Enter your number:"))
+# if x > y or x < y :
+#     print("x is not equal to y")
+# elif x < y:
+#     print("x is less than y")
+# else:
+#     print("x is equal to y")
+# import random
+# while True:
+#     score = int(input("Enter your number:"))
+#     if score > 90:
+#         print("Your grade is A")
+#     elif score >= 80:
+#         print("Your grade is B")
+#     elif score >= 70:
+#         print("Your grade is C")
+#     elif score >= 60:
+#         print("Your grade is D ")
+#     elif score < 60:
+#         print("Your grade is F")
+#
+# def main():
+#     x = int(input("Enter your number:"))
+#     if is_even(x):
+#         print("Even")
+#     else:
+#         print("Odd")
+#
+#
+# def is_even(n):
+#     return n % 2 == 0
+#
+#
+# main()
+# name = input("Enter a number:")
+# # match name:
+# #     case "Harry" | "Hermione" | "Ron":
+# #         print("Gryffindor")
+# #     case "Draco":
+# #         print("Slytherin")
+# #     case _:
+# #         print("Who")
+# i = float(3)
+# while i != 0:
+#     print("meow")
+#     i -= 0.5
+# list_name = ["riad", "nadir", 1, 2, True, False]
+# for i in list_name:
+#     print("meow")
+# while True:
+#     n = int(input("What is the n?"))
+#     if n > 0:
+#         break
+# for i in range(n):
+#     print("meow")
+# def main():
+#     number = get_number()
+# def get_number():
+#     while True:
+#         n = int(input("Enter your num:"))
+#         if n > 0:
+#             break
+#     meow(n)
+# def meow(n):
+#     for i in range(n):
+#         print("meow")
+# main()
+# students = ["Hermione", "Harry", "Ron"]
+# students.append("Riad")
+# students.pop()
+# for names in range(len(students) -1):
+#     print(names, students[names])
+# houses = ["Gryffindor", "Gryffindor", "Gryffindor", "Slytherin"]
+# new_dict = {
+#     "Hermy": "Gryffindor",
+#     "Harry": "Gryffindor",
+#     "Ron": "Gryffindor"
+# }
+# for students in new_dict:
+#     print(students, new_dict[students], sep=" ")
+# students = [
+#     {"name": "Hermione", "house": "Gryffindor", "patron": "Otter"},
+#     {"name": "Harry", "house": "Gryffindor", "patron": "Stag"},
+#     {"name": "Ron", "house": "Gryffindor", "patron": "Jack Russel terrier"},
+#     {"name": "Draco", "house": "Slytherin", "patron": None}
+# ]
+# for student in students:
+#     print( student["name"], student["house"], student["patron"], sep=" ")
+# def main():
+#     print_square(3)
+#
+# def print_square(size):
+#     for i in range(size):
+#             print("#"*size, end = "\n")
+# main()
+# try:
+#     print(hello)
+# except NameError:
+#     print("you make a mistake")
+# while x = int(x):
+#     try:
+#         x = int(input("What's x? "))
+#          print(f"Your number is{x}")
+
+#     except ValueError:
+#         print("ValueError")
+# def main():
+#     x = get_int()
+#     print(f"x is {x}")
+#
+#
+# def get_int():
+#     while True:
+#         try:
+#             return int(input("What's x? "))
+#         except ValueError:
+#             pass
+#
+#
+# main()
+# import random
+# print(choice(["eagle", "nub"]))
+# print(random.randint(1,1000))
+# cards = ["Jack", "King", "Queen"]
+# random.shuffle(cards)
+# for card in cards:
+#     print(card)
+# import statistics
+# print(statistics.median([1,2,3,4,6,7,8,9,0,10,5]))
+# print(statistics.mean([100, 95]))
+# import sys
+# while True:
+#     try:
+#         print("hello my name is", sys.argv[1])
+#         break
+#     except IndexError:
+#         print("You have some error")
+# import sys
+#
+# if len (sys.argv)<2:
+#     sys.exit("too few arguments")
+#
+# for arg in sys.argv[-1:]:
+#     print("hello, my name is", arg)
+# import cowsay
+# import sys
+# if len(sys.argv) == 2:
+#     cowsay.turkey("Hello,"+sys.argv[1])
+# import requests
+# import sys
+# import json
+# if len(sys.argv) !=2:
+#     sys.exit()
+# response = requests.get("https://itunes.apple.com/search?entity=song&limit=5&term="+sys.argv[1])
+# print(json.dumps(response.json(), indent=2))
+# o = response.json()
+# for result in o["results"]:
+#     print(result["artistName"])
+# def main():
+#     hello("world")
+#     goodbye("world")
+# def hello(name):
+#     print(f"hello, {name}")
+# def goodbye(name):
+#     print(f"goodbye, {name}")
+# if __name__== "__main__":
+#     main()
+# def main():
+#     x = (input("Whats x?: "))
+#     print(f"X is ", square(x))
+#
+#
+# def square(n):
+#     return n * n
+#
+#
+# if __name__ == "__main__":
+#     main()
+# def main():
+#     name = input("whats your name")
+#     print(hello(name))
+# def hello(to ="world"):
+#     return f"hello, {to}"
+# if __name__ == "__main__":
+#     main()
